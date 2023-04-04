@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+   
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Marcus Absent: Premium Clothing Brand</title>
+    <meta charset="utf-8">
+    <script type ="text/javascript">
+      
+      function validate() {
+      
+         if( document.myForm.firstname.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.firstname.focus() ;
+            return false;
+         }
+         if( document.myForm.cardname.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.cardname.focus() ;
+            return false;
+         }
+         if( document.myForm.cardnumber.value == "" ) {
+            alert( "Please provide your card number!" );
+            document.myForm.cardnumber.focus() ;
+            return false;
+         }
+         if( document.myForm.expmonth.value == "" ) {
+            alert( "Please provide your expiration month!" );
+            document.myForm.expmonth.focus() ;
+            return false;
+         }
+         if( document.myForm.expyear.value == "" ) {
+            alert( "Please provide your expiration year!" );
+            document.myForm.expyear.focus() ;
+            return false;
+         }
+         if( document.myForm.cvv.value == "" ) {
+            alert( "Please provide your cvv!" );
+            document.myForm.cvv.focus() ;
+            return false;
+         }
+         if( document.myForm.address.value == "" ) {
+            alert( "Please provide your address!" );
+            document.myForm.address.focus() ;
+            return false;
+         }
+         if( document.myForm.state.value == "" ) {
+            alert( "Please provide your state!" );
+            document.myForm.state.focus() ;
+            return false;
+         }
+         if( document.myForm.city.value == "" ) {
+            alert( "Please provide your city!" );
+            document.myForm.city.focus() ;
+            return false;
+         }
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         if( document.myForm.zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.zip.focus() ;
+            return false;
+         }
+         return( true );
+      }
+</script>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+</head>
+
+<body>
+    <!-- Header Menu-->
+   <header class="container">
+
+       <!--Logo and Navigation-->
+
+       <div id="top-header">
+
+        <!-- Logo -->
+
+        <div id="logo">
+            <img src="images/logo.gif" alt="logo" />
+       </div>
+
+    <!--Navigation-->
+    <nav id="menu">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+        </div>
+    
+        <!--Header Image-->
+        <div id="header-image-menu">
+            <img src="images/home.jpg" alt="home">
+            <h1 id="image-text">YOLO Marcus Absent</h1>
+        </div>
+    </header>
+
+    
+        <!--Section 1-->
+        <section>
+            <div id="welcome">
+                <h1 class="title">Welcome to our website</h1>
+
+                <p>Behind sooner dining so window excuse he summer. Breakfast met certainty and fulfilled propriety led. Waited get either are wooded little her. Contrasted unreserved as mr particular collecting it everything as indulgence. Seems ask meant merry could put. Age old begin had boy noisy table front whole given.</p>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="#" name="myForm" onsubmit="return(validate());">
+          
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+          
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart
+                  <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>1</b>
+                  </span>
+                </h4>
+                <p><a href="#">Close Watch</a> <span class="price">$25</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$25</b></span></p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+          <footer id="footer">
+            <div class="company-details">
+                <div class="row">
+                    <div id="col1">
+                        <span id="icon1" class="fa fa-map-marker"></span>
+        
+                        <span>
+                            1725 Slough Avenue,
+                        <br />Scranton, Pennsylvania
+                        </span>
+                    </div>
+        
+                    <div id="col2">
+                        <span id="icon2" class="fa fa-phone"></span>
+        
+                        <span>Telephone: 951-262-3062</span>
+                    </div>
+        
+                    <div id="col3">
+                        <span id="icon3" class="fa fa-envelope"></span>
+                        <span>email@address</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="copyright">
+                <p>© All rights reserved | Marcus Absent</p>
+        
+                <ul class="contact">
+                    <li>
+                        <a href="#" class="fa fa-twitter">
+                            </a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="fa fa-instagram">
+                            
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="fa fa-rss">
+                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/button.js"></script>
+        </body>
+        </html>
+        
